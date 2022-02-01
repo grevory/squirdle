@@ -1,6 +1,7 @@
 import Modal from 'react-modal'
 import { ReactComponent as Github } from '../data/Github.svg'
 import { ReactComponent as Close } from '../data/Close.svg'
+import { getIcon } from '../data/icons'
 
 Modal.setAppElement('#root')
 
@@ -24,7 +25,7 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }: Props) => (
         <div className="flex-1 w-full sm:text-base text-sm">
           <h1 className="text-center sm:text-3xl text-2xl">How to play</h1>
           <ul className="list-disc pl-5 block sm:text-base text-sm">
-            <li className="mt-6 mb-2">You have 6 guesses to guess the correct word.</li>
+            <li className="mt-6 mb-2">You have 6 guesses to guess the correct Pokemon team.</li>
             <li className="mb-2">You can guess any valid word.</li>
             <li className="mb-2">
               After each guess, each letter will turn green, yellow, or gray.
@@ -32,29 +33,29 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }: Props) => (
           </ul>
           <div className="mb-3 mt-8 flex items-center">
             <span className="nm-inset-n-green text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-              W
+              <img src={getIcon("S")} alt="S" />
             </span>
             <span className="mx-2">=</span>
-            <span>Correct letter, correct spot</span>
+            <span>Correct Pokemon, correct spot</span>
           </div>
           <div className="mb-3">
             <span className="nm-inset-yellow-500 text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-              W
+              <img src={getIcon("S")} alt="S" />
             </span>
             <span className="mx-2">=</span>
-            <span>Correct letter, wrong spot</span>
+            <span>Correct Pokemon, wrong spot</span>
           </div>
           <span className="nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-            W
+            <img src={getIcon("S")} alt="S" />
           </span>
           <span className="mx-2">=</span>
-          <span>Wrong letter</span>
+          <span>Wrong Pokemon</span>
         </div>
         <div className="flex justify-center sm:text-base text-sm">
           <span>This project is open source on</span>
           <a
             className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
-            href="https://github.com/octokatherine/word-master"
+            href="https://github.com/grevory/squirdle"
             target="_blank"
             rel="noreferrer"
           >

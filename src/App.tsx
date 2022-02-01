@@ -9,6 +9,7 @@ import answers from './data/answers'
 import { useLocalStorage } from './hooks/useLocalStorage'
 import { ReactComponent as Info } from './data/Info.svg'
 import { ReactComponent as Settings } from './data/Settings.svg'
+import { getIcon } from './data/icons'
 const words = require('./data/words').default as { [key: string]: boolean }
 
 const state = {
@@ -160,7 +161,6 @@ function App() {
   const isValidWord = (word: string): [boolean] | [boolean, string] => {
     if (word.length < 5) return [false, `please enter a 5 letter word`]
     if (difficultyLevel === difficulty.easy) return [true]
-    debugger
     if (!words[word.toLowerCase()]) return [false, `${word} is not a valid word. Please try again.`]
     if (difficultyLevel === difficulty.normal) return [true]
     const guessedLetters = Object.entries(letterStatuses).filter(([letter, letterStatus]) =>
@@ -342,15 +342,8 @@ function App() {
     <div className={darkMode ? 'dark' : ''}>
       <div className={`flex flex-col justify-between h-fill bg-background dark:bg-background-dark`}>
         <header className="flex items-center py-2 px-3 text-primary dark:text-primary-dark">
-          <button
-            type="button"
-            onClick={() => setSettingsModalIsOpen(true)}
-            className="p-1 rounded-full"
-          >
-            <Settings />
-          </button>
           <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
-            WORD MASTER
+            SQUIRDLE
           </h1>
           <button
             type="button"
@@ -373,7 +366,7 @@ function App() {
                       letter
                     )} inline-flex items-center font-medium justify-center text-lg w-[13vw] h-[13vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded-full`}
                   >
-                    {letter}
+                    <img src={getIcon(letter)} alt={letter} />
                   </span>
                 ))
               )}
