@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/squirdle/static/css/main.6a375e41.css",
-    "main.js": "/squirdle/static/js/main.38c611c2.js",
+    "main.css": "/squirdle/static/css/main.6aef9d4f.css",
+    "main.js": "/squirdle/static/js/main.88a87c89.js",
     "static/media/Cross.png": "/squirdle/static/media/Cross.cbf77228e847522eff11.png",
     "static/media/Success.png": "/squirdle/static/media/Success.58014ed1cec60216c466.png",
     "static/media/b.png": "/squirdle/static/media/b.961a737abc93a29558b0.png",
+    "static/media/background.png": "/squirdle/static/media/background.52e61746cf10db52b393.png",
     "static/media/s.png": "/squirdle/static/media/s.5406ef593ec743416dcc.png",
     "static/media/e.png": "/squirdle/static/media/e.ab17b728c360c91d2a16.png",
     "static/media/c.png": "/squirdle/static/media/c.4fd5701aa09647505bc4.png",
@@ -14,11 +15,11 @@
     "static/media/Github.svg": "/squirdle/static/media/Github.6a9e1709e73c56888979048bb60e60a5.svg",
     "static/media/Info.svg": "/squirdle/static/media/Info.ee717ac430bb01bfbbd42aa3dbffe913.svg",
     "static/media/Close.svg": "/squirdle/static/media/Close.f34771d5d250820d8c5ec83c816bf8f5.svg",
-    "main.6a375e41.css.map": "/squirdle/static/css/main.6a375e41.css.map",
-    "main.38c611c2.js.map": "/squirdle/static/js/main.38c611c2.js.map"
+    "main.6aef9d4f.css.map": "/squirdle/static/css/main.6aef9d4f.css.map",
+    "main.88a87c89.js.map": "/squirdle/static/js/main.88a87c89.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a375e41.css",
-    "static/js/main.38c611c2.js"
+    "static/css/main.6aef9d4f.css",
+    "static/js/main.88a87c89.js"
   ]
 }
