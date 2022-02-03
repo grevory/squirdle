@@ -30,6 +30,8 @@ body,
 html {
   /* Prevent overscroll on chrome (not supported on safari) */
   overscroll-behavior-y: none;
+  height: 100%;
+  overflow: hidden;
 }
 .h-fill {
   height: 100vh;
@@ -43,6 +45,4 @@ html {
 .full-background {
   background: url("/public/assets/background.png") no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
-  overflow: hidden;
 }
