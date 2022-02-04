@@ -21,6 +21,11 @@ body {
   /* background-color: hsl(231, 16%, 92%); */
 }
 
+body {
+  background: url("/public/assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -31,7 +36,6 @@ html {
   /* Prevent overscroll on chrome (not supported on safari) */
   overscroll-behavior-y: none;
   height: 100%;
-  overflow: hidden;
 }
 .h-fill {
   height: 100vh;
@@ -40,9 +44,4 @@ html {
 
 .font-righteous {
   font-family: "Righteous", cursive;
-}
-
-.full-background {
-  background: url("/public/assets/background.png") no-repeat center center fixed;
-  background-size: cover;
 }

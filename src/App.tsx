@@ -342,7 +342,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className={`flex flex-col justify-between h-fill bg-background full-background dark:bg-background-dark`}>
+      <div className={`flex flex-col justify-between h-fill`}>
         <header className="flex items-center py-2 px-3 text-primary dark:text-primary-dark">
           <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
             SQUIRDLE
